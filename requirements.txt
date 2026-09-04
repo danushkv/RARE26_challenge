@@ -1,0 +1,13 @@
+# Minimal environment reconstructed from the recorded RARE26 runs.
+# Replace this with environment/req_c.txt when the original full export is supplied.
+torch==2.7.1
+torchvision==0.22.1
+timm==1.0.19
+scikit-learn==1.7.1
+pandas==2.3.1
+numpy==1.26.4
+Pillow==11.3.0
+albumentations==2.0.8
+opencv-python-headless==4.13.0.92
+wandb==0.21.3
+escnn==1.0.11
