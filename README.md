@@ -26,20 +26,7 @@ RARE26_challenge/
 
 ## Setup
 
-Python 3.12.3 was used for the original jobs.
-
-On the original cluster, training used the existing environment:
-
-```bash
-source /data/cat/ws/dave995e-my_folder/dave995e-folder-1781485218/envs/rare/bin/activate
-```
-
-The full package snapshot exported from that environment is committed as
-[`environment/req_x.txt`](environment/req_x.txt). The activation path above is
-machine-specific and is included for provenance; it is not expected to work on
-another system.
-
-For a portable clean installation, run:
+Python 3.12.3 was used for the original jobs. For a portable clean installation, run:
 
 ```bash
 ./scripts/create_environment.sh
