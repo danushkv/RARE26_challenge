@@ -2,24 +2,7 @@
 
 ## Original training environment
 
-The submitted models were trained after activating this environment:
-
-```bash
-source /data/cat/ws/dave995e-my_folder/dave995e-folder-1781485218/envs/rare/bin/activate
-```
-
-The environment uses Python 3.12.3 and PyTorch 2.7.1+cu126. Its complete
-package set was exported on 5 September 2026 with the environment's own
-interpreter:
-
-```bash
-/data/cat/ws/dave995e-my_folder/dave995e-folder-1781485218/envs/rare/bin/python \
-    -m pip freeze --all
-```
-
-The resulting snapshot is committed as [`req_x.txt`](req_x.txt). The virtual
-environment directory is not committed because it contains machine-specific
-binaries, symlinks, and absolute paths.
+The environment uses Python 3.12.3 and PyTorch 2.7.1+cu126. 
 
 The original cluster modules were:
 
