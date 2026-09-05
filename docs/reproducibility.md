@@ -45,10 +45,10 @@ branch. File-level SHA-256 digests are recorded in
   optimizer, epoch counts, and seeds. This repository supports this level.
 - **Numerical reproduction:** matching every floating-point checkpoint bit.
   This is not guaranteed across CUDA/cuDNN versions and GPU architectures.
-- **Historical environment reproduction:** the available `req_x.txt` records
-  only `pip`, so it cannot reconstruct every transitive package from the
-  original job. The pinned repository requirements provide a clean compatible
-  environment, but should not be described as a bit-for-bit historical export.
+- **Historical environment reproduction:** `environment/req_x.txt` records the
+  complete package snapshot exported from the training virtual environment.
+  The original environment itself was activated from the cluster-specific path
+  documented in `environment/README.md`.
 
 ## Evaluation interpretation
 

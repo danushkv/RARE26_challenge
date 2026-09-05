@@ -5,6 +5,7 @@ The model weights and image data are intentionally not committed.
 | Artifact | Source | SHA-256 |
 |---|---|---|
 | `data/splits/5fold_cv.csv` | Included in this repository | `dc07de48a0cb1c94a65069a75bff7903be262d04619b78f48c1eb03903e4e2c4` |
+| `environment/req_x.txt` | Exported from the original training virtual environment | `abb11b4d07c91023e9cafc9a423243b5827e06451829374f9c01b8d6c9ac118a` |
 | `RN50_Billion-Scale-SWSL_2BGastroNet-5M_DINOv1.pth` | [Theta Vision Cortex](https://cortex.thetavision.nl/dataset-provider/listing/2/) | `5688929fea4437031604001495fb77fb18cdc2ff92ae24120f93aeceaf5aa16d` |
 
 Verify both before a reproduction run:

@@ -6,9 +6,7 @@ using a C4-equivariant classifier head.
 
 This repository contains training code, the exact five-fold assignment,
 challenge-style evaluation, artifact checksums, and a reusable description of
-the training method. It does **not** redistribute the challenge images, the
-GastroNet pretrained checkpoint, trained weights, or Grand Challenge test
-data. The ten trained submission checkpoints are published separately on
+the training method. The ten trained submission checkpoints are published separately on
 [Hugging Face](https://huggingface.co/danushkv/RARE26).
 
 ## Repository layout
@@ -30,16 +28,26 @@ RARE26_challenge/
 
 Python 3.12.3 was used for the original jobs.
 
+On the original cluster, training used the existing environment:
+
+```bash
+source /data/cat/ws/dave995e-my_folder/dave995e-folder-1781485218/envs/rare/bin/activate
+```
+
+The full package snapshot exported from that environment is committed as
+[`environment/req_x.txt`](environment/req_x.txt). The activation path above is
+machine-specific and is included for provenance; it is not expected to work on
+another system.
+
+For a portable clean installation, run:
+
 ```bash
 ./scripts/create_environment.sh
 source .venv/bin/activate
 ```
 
-The available `req_x.txt` contains only a reference to `pip` and is therefore
-not a complete environment export. It is retained under `environment/` for
-provenance. The repository-level `requirements.txt` is the clean,
-dependency-resolvable environment specification. See `environment/README.md`
-for details and cluster module instructions.
+See [`environment/README.md`](environment/README.md) for the distinction
+between the captured training environment and the portable dependency set.
 
 ## Required inputs
 
@@ -59,11 +67,10 @@ python scripts/verify_artifacts.py \
 
 The exact five linear-head and five eqC4 checkpoints used by the submitted
 ensemble can be downloaded from
-[`danushkv/RARE26`](https://huggingface.co/danushkv/RARE26).
+[C4-ensemble chkpts](https://huggingface.co/danushkv/RARE26).
 
 These are the final fine-tuned inference checkpoints. They are distinct from
-the GastroNet checkpoint in **Required inputs**, which initializes
-reproduction training.
+the GastroNet checkpoint in **Required inputs**, which initializes training.
 
 ## Train
 
