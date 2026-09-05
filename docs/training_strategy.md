@@ -4,10 +4,10 @@
 
 The system combines ten ResNet-50 classifiers: five models with a standard
 linear classifier and five models with a cyclic C4-equivariant classifier
-head. The backbone is a `timm` ResNet-50 initialized from the publicly
-available `RN50_Billion-Scale-SWSL_2BGastroNet-5M_DINOv1` self-supervised
-checkpoint. The original checkpoint classifier is discarded and a new binary
-head is initialized before fine-tuning.
+head. The backbone is a `timm` ResNet-50 initialized from the
+[`RN50_Billion-Scale-SWSL_2BGastroNet-5M_DINOv1`](https://cortex.thetavision.nl/dataset-provider/listing/2/)
+self-supervised checkpoint. The original checkpoint classifier is discarded
+and a new binary head is initialized before fine-tuning.
 
 The C4 component applies equivariant linear layers only to the pooled
 2,048-dimensional backbone representation. Features are interpreted as copies
